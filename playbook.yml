@@ -4,6 +4,6 @@
   remote_user: deploy # Remote user
 
   tasks:
-  - name: ping to ec2
+  - name: ping-to-ec2
     ping:
   
