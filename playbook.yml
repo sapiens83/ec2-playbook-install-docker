@@ -7,5 +7,5 @@
 
   tasks:
   - name: ping-to-ec2
-    command: hostname
+    command: touch /tmp/jilo
   
