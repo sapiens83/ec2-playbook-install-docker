@@ -7,5 +7,5 @@
 
   tasks:
   - name: ping-to-ec2
-    ip: addr
+    command: ip addr
   
