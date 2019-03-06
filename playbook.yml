@@ -7,5 +7,5 @@
 
   tasks:
   - name: ping-to-ec2
-    command: cat /tmp/hello
+    command: ls /tmp/
   
