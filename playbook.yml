@@ -1,7 +1,7 @@
 ---
 - name: Test
   hosts: test-hosts
-  remote_user: deploy # Remote user
+  remote_user: ubuntu # Remote user
 
   tasks:
   - name: ping-to-ec2
