@@ -1,4 +1,4 @@
-ansible_ssh_host: ec2-18-234-190-136.compute-1.amazonaws.com
+ansible_ssh_host: 172.31.90.238
 ansible_ssh_port: 22
 ansible_ssh_user: deploy
 #ansible_ssh_pass: Yomero83$
