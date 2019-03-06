@@ -2,7 +2,6 @@
 - name: Test
   hosts: test-hosts
   gather_facts: False
-  connection: local
   remote_user: ubuntu # Remote user
 
   tasks:
