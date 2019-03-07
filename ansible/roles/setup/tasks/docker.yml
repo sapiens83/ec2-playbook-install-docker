@@ -1,6 +1,13 @@
 ---
     # This playbook contains docker actions that will be run on "remote" host.
      
+    
+    - name: Remove previous docker installation
+      apt:
+       name: "{{ item.package }}"
+       state: absent
+      with_items: "{{ docker_cleanup_packages_Ubuntu }}"
+    
     # sudo apt-get install *
     - name: Install docker packages
       apt:
@@ -45,7 +52,7 @@
     # sudo apt-get install docker-ce=18.03.*
     - name: Install docker
       apt:
-        name: docker-ce=18.09.*
+        name: docker-ce
         state: present
         update_cache: yes
       notify: Start docker on boot
@@ -72,7 +79,7 @@
     # sudo apt-get install docker-compose=1.8.*
     - name: Install docker-compose
       apt:
-        name: docker-compose=1.9.*
+        name: docker-compose
         state: present
         update_cache: yes
       tags:
