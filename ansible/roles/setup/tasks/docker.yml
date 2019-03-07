@@ -72,7 +72,7 @@
     # sudo apt-get install docker-compose=1.8.*
     - name: Install docker-compose
       apt:
-        name: docker-compose=1.8.*
+        name: docker-compose=1.9.*
         state: present
         update_cache: yes
       tags:
