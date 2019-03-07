@@ -2,11 +2,6 @@
     # This playbook contains docker actions that will be run on "remote" host.
      
     
-    - name: Remove previous docker installation
-      apt:
-       name: "{{ item.package }}"
-       state: absent
-      with_items: "{{ docker_cleanup_packages_Ubuntu }}"
     
     # sudo apt-get install *
     - name: Install docker packages
